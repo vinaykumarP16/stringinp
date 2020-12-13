@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Scold-here
+	</title>
+</head>
+<body>
+	<h1>scold anyone here</h1>
+<textarea cols="80" rows="12;" id="text" style="text-align: center; align-items: center;" placeholder="EnTeR HerE"></textarea>
+<br>
+<br>
+<button onclick="func1()">Scold</button>
+<br><h3>Sorted Text</h3>
+<br>
+<textarea id="output" cols="80" rows="12;"  style="text-align: center; align-items: center;" placeholder="You entereD" ></textarea>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function func1(argument) {
+		var inputText=document.getElementById('text').value;
+		var new1=inputText.toLowerCase().replace('fuck','****').replace('ass','***').replace('shit','****').replace('piss','****').replace('asshole','*******').replace('bitch','*****').replace('bastard','*****').replace('bloody hell','*******').replace('hole','****').replace('pussy','*****').replace('dick','****').replace('naked','*****').replace('sex','');
+		console.log(new1);
+		document.getElementById('output').innerText=new1;
+	}
+	
+</script>
+
+<style type="text/css">
+	body{
+		text-align: center;
+		align-items: center;
+		background-color: #85eaef7a;
+	
+	}
+</style>
+
